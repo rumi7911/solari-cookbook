@@ -1,0 +1,11 @@
+Every coding challenge looks promising—until hours disappear into rules and technical risk.
+
+BuildOrSkip starts with one public URL. It checks eligibility, deadlines, deliverables, competition, and calculates a transparent portfolio-first score.
+
+When a repository is found, nothing runs automatically. Review the revision, commands, limits, and secret policy before approving an isolated Solari sandbox.
+
+The verdict—Build, Skip, or Investigate Further—is supported by citations, logs, risks, and three differentiated directions.
+
+This showcase uses the safe replay; live Solari Browser and Sandbox paths were validated separately.
+
+Build the project. Keep the receipts.

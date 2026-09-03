@@ -50,7 +50,8 @@ The canonical Solari investigation has been exercised end to end:
 
 ## Review the work
 
-- [43-second product showcase](submissions/build-or-skip/docs/demo/buildorskip-showcase.mp4)
+- [Narrated 43-second product showcase](submissions/build-or-skip/docs/demo/buildorskip-showcase.mp4)
+- [Voice-over script](submissions/build-or-skip/docs/demo/buildorskip-voiceover.txt)
 - [Editable showcase source](submissions/build-or-skip/demo-video)
 - [Project source and setup](submissions/build-or-skip)
 - [Consent-gated runner](submissions/build-or-skip/server/verification.ts)

@@ -9,7 +9,7 @@ portfolio-first and includes a polished Solari challenge case study.
 
 [![Watch the 43-second BuildOrSkip showcase](docs/demo/buildorskip-showcase-poster.png)](docs/demo/buildorskip-showcase.mp4)
 
-**[Watch the 43-second product showcase](docs/demo/buildorskip-showcase.mp4).** It uses the
+**[Watch the narrated 43-second product showcase](docs/demo/buildorskip-showcase.mp4).** It uses the
 privacy-safe no-key replay and labels that boundary on-screen; the live Browser and Sandbox
 validation evidence is documented in the [submission brief](../../SUBMISSION.md).
 

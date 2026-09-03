@@ -1,5 +1,6 @@
 import {fade} from "@remotion/transitions/fade";
 import {TransitionSeries, linearTiming} from "@remotion/transitions";
+import {Audio} from "@remotion/media";
 import {
   AbsoluteFill,
   CanvasImage,
@@ -12,6 +13,7 @@ import {
 
 const FPS = 30;
 const TRANSITION = 15;
+const VOICEOVER_FRAMES = Math.ceil(42.3 * FPS);
 
 const colors = {
   ink: "#17181c",
@@ -129,24 +131,35 @@ const scenes = [
 const TOTAL_DURATION = scenes.reduce((total, scene) => total + scene.duration, 0) - TRANSITION * (scenes.length - 1);
 
 export const ShowcaseVideo = () => (
-  <TransitionSeries>
-    {scenes.flatMap((scene, index) => {
-      const sequence = (
-        <TransitionSeries.Sequence durationInFrames={scene.duration} key={`scene-${index}`}>
-          {scene.component}
-        </TransitionSeries.Sequence>
-      );
-      if (index === scenes.length - 1) return [sequence];
-      return [
-        sequence,
-        <TransitionSeries.Transition
-          key={`transition-${index}`}
-          presentation={fade()}
-          timing={linearTiming({durationInFrames: TRANSITION})}
-        />,
-      ];
-    })}
-  </TransitionSeries>
+  <>
+    <TransitionSeries>
+      {scenes.flatMap((scene, index) => {
+        const sequence = (
+          <TransitionSeries.Sequence durationInFrames={scene.duration} key={`scene-${index}`}>
+            {scene.component}
+          </TransitionSeries.Sequence>
+        );
+        if (index === scenes.length - 1) return [sequence];
+        return [
+          sequence,
+          <TransitionSeries.Transition
+            key={`transition-${index}`}
+            presentation={fade()}
+            timing={linearTiming({durationInFrames: TRANSITION})}
+          />,
+        ];
+      })}
+    </TransitionSeries>
+    <Audio
+      src={staticFile("audio/buildorskip-voiceover-bm-george.wav")}
+      volume={(frame) => interpolate(
+        frame,
+        [0, 8, VOICEOVER_FRAMES - 18, VOICEOVER_FRAMES],
+        [0, 1, 1, 0],
+        {extrapolateLeft: "clamp", extrapolateRight: "clamp"},
+      )}
+    />
+  </>
 );
 
 export const MyComposition = () => (
