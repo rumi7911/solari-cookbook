@@ -7,6 +7,12 @@ portfolio-first and includes a polished Solari challenge case study.
 [Submission brief](../../SUBMISSION.md) · [Solari Browser collector](server/solari-browser.ts) ·
 [Consent-gated sandbox runner](server/verification.ts)
 
+[![Watch the 43-second BuildOrSkip showcase](docs/demo/buildorskip-showcase-poster.png)](docs/demo/buildorskip-showcase.mp4)
+
+**[Watch the 43-second product showcase](docs/demo/buildorskip-showcase.mp4).** It uses the
+privacy-safe no-key replay and labels that boundary on-screen; the live Browser and Sandbox
+validation evidence is documented in the [submission brief](../../SUBMISSION.md).
+
 ![BuildOrSkip evidence dashboard](docs/design/report-implementation.png)
 
 ## Reviewer quick start
@@ -91,6 +97,8 @@ npm run build
 - `shared/` — report contracts, published scoring model, and Markdown evidence pack
 - `docs/design/` — generated product concepts, design system, and implementation comparison
   captures
+- `docs/demo/` — web-optimized 1080p showcase video and poster
+- `demo-video/` — editable Remotion source and privacy-safe browser captures used for the video
 
 No account, database, public sharing endpoint, payment flow, or private-resource access is part
 of v1.

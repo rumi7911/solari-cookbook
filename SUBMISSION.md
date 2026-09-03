@@ -50,6 +50,8 @@ The canonical Solari investigation has been exercised end to end:
 
 ## Review the work
 
+- [43-second product showcase](submissions/build-or-skip/docs/demo/buildorskip-showcase.mp4)
+- [Editable showcase source](submissions/build-or-skip/demo-video)
 - [Project source and setup](submissions/build-or-skip)
 - [Consent-gated runner](submissions/build-or-skip/server/verification.ts)
 - [Solari Browser collector](submissions/build-or-skip/server/solari-browser.ts)
@@ -79,3 +81,7 @@ The public app should not expose unlimited access to a long-lived Solari key. A 
 therefore needs rate limits and a small usage budget, or it should run in the clearly labelled
 no-key replay mode. The local live demo remains the strongest way to show both Solari surfaces
 without creating an abuse path.
+
+The public showcase video deliberately records that privacy-safe replay and states the limitation
+on-screen. It does not claim that the replay is a fresh live SDK execution; the separate live
+validation results above remain the technical proof.
