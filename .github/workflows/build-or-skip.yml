@@ -1,0 +1,32 @@
+name: BuildOrSkip CI
+
+on:
+  push:
+    paths:
+      - "submissions/build-or-skip/**"
+      - ".github/workflows/build-or-skip.yml"
+  pull_request:
+    paths:
+      - "submissions/build-or-skip/**"
+      - ".github/workflows/build-or-skip.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: submissions/build-or-skip
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: submissions/build-or-skip/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run build

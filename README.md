@@ -1,5 +1,15 @@
 # Solari Cookbook
 
+> ## Featured challenge submission: BuildOrSkip
+>
+> **BuildOrSkip** turns a public coding challenge, SDK competition, hackathon, or bounty into an
+> evidence-backed **Build**, **Skip**, or **Investigate Further** decision. It uses Solari Browser
+> for public-source research and Solari Sandbox for consent-gated technical verification.
+>
+> [Open the project](submissions/build-or-skip) · [Read the submission brief](SUBMISSION.md)
+
+![BuildOrSkip evidence report](submissions/build-or-skip/docs/design/report-implementation.png)
+
 Short, runnable examples for [Solari](https://getsolari.com) — cloud browsers,
 sandboxes, and desktops behind one API key.
 
