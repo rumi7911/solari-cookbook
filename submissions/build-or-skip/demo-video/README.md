@@ -1,6 +1,6 @@
 # BuildOrSkip showcase video
 
-Editable Remotion source for the 43-second, narrated product showcase. The browser frames are
+Editable Remotion source for the 47-second, narrated product showcase. The browser frames are
 privacy-safe captures of the no-key Solari demo path. The closing card explicitly distinguishes
 that replay from the separately documented live Solari Browser and Sandbox validation.
 
@@ -8,9 +8,9 @@ that replay from the separately documented live Solari Browser and Sandbox valid
 
 - Script: [`../docs/demo/buildorskip-voiceover.txt`](../docs/demo/buildorskip-voiceover.txt)
 - Engine: local Kokoro-MLX
-- Voice: British male `bm_george`, calm and credible at 1.10× speed
+- Voice: British male `bm_george`, calm and credible at its natural 1.00× speed
 - Source: `public/audio/buildorskip-voiceover-bm-george.wav`
-- Audio: 42.3 seconds, mono 48 kHz WAV, normalized to approximately −18 LUFS
+- Audio: 44.6 seconds, mono 48 kHz WAV, normalized to approximately −18 LUFS
 
 ## Commands
 
@@ -24,6 +24,12 @@ Open the editable Remotion preview:
 
 ```bash
 npm run dev
+```
+
+Verify that the natural-speed narration retains a comfortable closing hold:
+
+```bash
+npm run test:pacing
 ```
 
 Render the 1080p source:

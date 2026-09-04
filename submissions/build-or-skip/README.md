@@ -7,9 +7,9 @@ portfolio-first and includes a polished Solari challenge case study.
 [Submission brief](../../SUBMISSION.md) · [Solari Browser collector](server/solari-browser.ts) ·
 [Consent-gated sandbox runner](server/verification.ts)
 
-[![Watch the 43-second BuildOrSkip showcase](docs/demo/buildorskip-showcase-poster.png)](docs/demo/buildorskip-showcase.mp4)
+[![Watch the 47-second BuildOrSkip showcase](docs/demo/buildorskip-showcase-poster.png)](docs/demo/buildorskip-showcase.mp4)
 
-**[Watch the narrated 43-second product showcase](docs/demo/buildorskip-showcase.mp4).** It uses the
+**[Watch the narrated 47-second product showcase](docs/demo/buildorskip-showcase.mp4).** It uses the
 privacy-safe no-key replay and labels that boundary on-screen; the live Browser and Sandbox
 validation evidence is documented in the [submission brief](../../SUBMISSION.md).
 

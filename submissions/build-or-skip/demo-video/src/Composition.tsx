@@ -13,7 +13,7 @@ import {
 
 const FPS = 30;
 const TRANSITION = 15;
-const VOICEOVER_FRAMES = Math.ceil(42.3 * FPS);
+const VOICEOVER_FRAMES = Math.ceil(44.6 * FPS);
 
 const colors = {
   ink: "#17181c",
@@ -118,14 +118,14 @@ const ClosingScene = () => {
 };
 
 const scenes = [
-  {duration: 135, component: <TitleScene />},
-  {duration: 165, component: <ProductScene image="01-intake.png" kicker="01 · Minimal intake" title="Start with one public URL." detail="Personal constraints and supporting files are optional—useful value comes first." />},
-  {duration: 195, component: <ProductScene image="03-consent-approved.png" kicker="02 · Consent-gated execution" title="Review every command before it runs." detail="Repository, revision, limits, and secret policy are visible before sandbox approval." accent="#e2a82d" />},
-  {duration: 180, component: <ProductScene image="04-verdict.png" kicker="03 · Evidence-backed verdict" title="Build, Skip, or Investigate Further." detail="A portfolio-first score, confidence level, facts, and citations make the recommendation auditable." accent={colors.green} />},
-  {duration: 210, component: <ProductScene image="06-verification.png" kicker="04 · Technical proof" title="Feasibility is tested—not guessed." detail="Pinned revision, runtime mode, duration, artifacts, and logs are preserved in the report." accent="#e2a82d" />},
-  {duration: 180, component: <ProductScene image="07-directions.png" kicker="05 · Competitive whitespace" title="Three differentiated two-week directions." detail="Each idea names its user, outcome, demo boundary, differentiation, and principal risk." accent="#8a49e8" />},
-  {duration: 165, component: <ProductScene image="08-sources.png" kicker="06 · Complete evidence ledger" title="Every critical claim keeps its source." detail="Authority, collection method, status, and retrieval time stay attached to the decision." />},
-  {duration: 165, component: <ClosingScene />},
+  {duration: 150, component: <TitleScene />},
+  {duration: 180, component: <ProductScene image="01-intake.png" kicker="01 · Minimal intake" title="Start with one public URL." detail="Personal constraints and supporting files are optional—useful value comes first." />},
+  {duration: 210, component: <ProductScene image="03-consent-approved.png" kicker="02 · Consent-gated execution" title="Review every command before it runs." detail="Repository, revision, limits, and secret policy are visible before sandbox approval." accent="#e2a82d" />},
+  {duration: 195, component: <ProductScene image="04-verdict.png" kicker="03 · Evidence-backed verdict" title="Build, Skip, or Investigate Further." detail="A portfolio-first score, confidence level, facts, and citations make the recommendation auditable." accent={colors.green} />},
+  {duration: 225, component: <ProductScene image="06-verification.png" kicker="04 · Technical proof" title="Feasibility is tested—not guessed." detail="Pinned revision, runtime mode, duration, artifacts, and logs are preserved in the report." accent="#e2a82d" />},
+  {duration: 195, component: <ProductScene image="07-directions.png" kicker="05 · Competitive whitespace" title="Three differentiated two-week directions." detail="Each idea names its user, outcome, demo boundary, differentiation, and principal risk." accent="#8a49e8" />},
+  {duration: 180, component: <ProductScene image="08-sources.png" kicker="06 · Complete evidence ledger" title="Every critical claim keeps its source." detail="Authority, collection method, status, and retrieval time stay attached to the decision." />},
+  {duration: 180, component: <ClosingScene />},
 ];
 
 const TOTAL_DURATION = scenes.reduce((total, scene) => total + scene.duration, 0) - TRANSITION * (scenes.length - 1);
